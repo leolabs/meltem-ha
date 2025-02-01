@@ -1,0 +1,284 @@
+[
+  {
+    "status": "COMPLETE",
+    "method": "POST",
+    "protocolVersion": "HTTP/2.0",
+    "scheme": "https",
+    "host": "api.connect2myhome.eu",
+    "actualPort": 443,
+    "path": "/v1/device/data/set",
+    "query": null,
+    "tunnel": false,
+    "keptAlive": true,
+    "clientKeptAlive": true,
+    "remoteAddress": "api.connect2myhome.eu/108.177.15.121",
+    "clientAddress": "/192.168.1.55",
+    "clientPort": 55858,
+    "clientLocalPort": 8888,
+    "remoteLocalPort": 53541,
+    "times": {
+      "start": "2025-02-01T14:32:48.668+01:00",
+      "requestBegin": "2025-02-01T14:32:48.670+01:00",
+      "requestComplete": "2025-02-01T14:32:48.671+01:00",
+      "responseBegin": "2025-02-01T14:32:48.969+01:00",
+      "end": "2025-02-01T14:32:48.969+01:00"
+    },
+    "durations": {
+      "total": 299,
+      "dns": null,
+      "connect": null,
+      "ssl": null,
+      "request": 1,
+      "response": 0,
+      "latency": 298
+    },
+    "speeds": { "overall": 1622, "request": 356000, "response": 0 },
+    "totalSize": 485,
+    "ssl": { "protocol": "TLSv1.3" },
+    "request": {
+      "sizes": { "headers": 64, "body": 292 },
+      "mimeType": "application/x-www-form-urlencoded",
+      "charset": "UTF-8",
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          { "name": ":method", "value": "POST" },
+          { "name": ":scheme", "value": "https" },
+          { "name": ":path", "value": "/v1/device/data/set" },
+          { "name": ":authority", "value": "api.connect2myhome.eu" },
+          { "name": "accept", "value": "*/*" },
+          {
+            "name": "content-type",
+            "value": "application/x-www-form-urlencoded;charset=UTF-8"
+          },
+          { "name": "accept-encoding", "value": "gzip, deflate, br" },
+          {
+            "name": "user-agent",
+            "value": "meltem/113 CFNetwork/1568.300.101 Darwin/24.2.0"
+          },
+          { "name": "content-length", "value": "292" },
+          { "name": "accept-language", "value": "en-GB,en;q=0.9" }
+        ]
+      },
+      "body": {
+        "text": "apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&deviceId=ee1c263ee65cc605cfa38b74c2a79cee4267259814a277b4e3213f70d2c1c180&register=41120&values=3%2C228%2C0%2C0%2C0%2C0%2C0%2C0%2C0%2C0%2C0%2C0%2C0",
+        "charset": "UTF-8"
+      }
+    },
+    "response": {
+      "status": 200,
+      "sizes": { "headers": 58, "body": 71 },
+      "mimeType": "application/json",
+      "charset": null,
+      "contentEncoding": "gzip",
+      "header": {
+        "headers": [
+          { "name": ":status", "value": "200" },
+          { "name": "content-type", "value": "application/json" },
+          { "name": "vary", "value": "Accept-Encoding, User-Agent" },
+          { "name": "content-encoding", "value": "gzip" },
+          {
+            "name": "x-cloud-trace-context",
+            "value": "a424b82cffa01f70656c2a1913184092"
+          },
+          { "name": "date", "value": "Sat, 01 Feb 2025 13:32:49 GMT" },
+          { "name": "server", "value": "Google Frontend" },
+          { "name": "content-length", "value": "71" }
+        ]
+      },
+      "body": {
+        "text": "{\"statusId\":\"d6211bdf-4ffa-4c99-b69b-bd89b14083eb\"}",
+        "charset": null,
+        "decoded": true
+      }
+    }
+  },
+  {
+    "status": "COMPLETE",
+    "method": "POST",
+    "protocolVersion": "HTTP/2.0",
+    "scheme": "https",
+    "host": "api.connect2myhome.eu",
+    "actualPort": 443,
+    "path": "/v1/device/data/set",
+    "query": null,
+    "tunnel": false,
+    "keptAlive": true,
+    "clientKeptAlive": true,
+    "remoteAddress": "api.connect2myhome.eu/108.177.15.121",
+    "clientAddress": "/192.168.1.55",
+    "clientPort": 55858,
+    "clientLocalPort": 8888,
+    "remoteLocalPort": 53541,
+    "times": {
+      "start": "2025-02-01T14:32:50.401+01:00",
+      "requestBegin": "2025-02-01T14:32:50.401+01:00",
+      "requestComplete": "2025-02-01T14:32:50.402+01:00",
+      "responseBegin": "2025-02-01T14:32:50.710+01:00",
+      "end": "2025-02-01T14:32:50.710+01:00"
+    },
+    "durations": {
+      "total": 309,
+      "dns": null,
+      "connect": null,
+      "ssl": null,
+      "request": 1,
+      "response": 0,
+      "latency": 308
+    },
+    "speeds": { "overall": 1391, "request": 302000, "response": 0 },
+    "totalSize": 430,
+    "ssl": { "protocol": "TLSv1.3" },
+    "request": {
+      "sizes": { "headers": 10, "body": 292 },
+      "mimeType": "application/x-www-form-urlencoded",
+      "charset": "UTF-8",
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          { "name": ":method", "value": "POST" },
+          { "name": ":scheme", "value": "https" },
+          { "name": ":path", "value": "/v1/device/data/set" },
+          { "name": ":authority", "value": "api.connect2myhome.eu" },
+          { "name": "accept", "value": "*/*" },
+          {
+            "name": "content-type",
+            "value": "application/x-www-form-urlencoded;charset=UTF-8"
+          },
+          { "name": "accept-encoding", "value": "gzip, deflate, br" },
+          {
+            "name": "user-agent",
+            "value": "meltem/113 CFNetwork/1568.300.101 Darwin/24.2.0"
+          },
+          { "name": "content-length", "value": "292" },
+          { "name": "accept-language", "value": "en-GB,en;q=0.9" }
+        ]
+      },
+      "body": {
+        "text": "apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&deviceId=ee1c263ee65cc605cfa38b74c2a79cee4267259814a277b4e3213f70d2c1c180&register=41120&values=3%2C229%2C0%2C0%2C0%2C0%2C0%2C0%2C0%2C0%2C0%2C0%2C0",
+        "charset": "UTF-8"
+      }
+    },
+    "response": {
+      "status": 200,
+      "sizes": { "headers": 57, "body": 71 },
+      "mimeType": "application/json",
+      "charset": null,
+      "contentEncoding": "gzip",
+      "header": {
+        "headers": [
+          { "name": ":status", "value": "200" },
+          { "name": "content-type", "value": "application/json" },
+          { "name": "vary", "value": "Accept-Encoding, User-Agent" },
+          { "name": "content-encoding", "value": "gzip" },
+          {
+            "name": "x-cloud-trace-context",
+            "value": "d4e7e70e0fdbe8279344d9d63255ee71"
+          },
+          { "name": "date", "value": "Sat, 01 Feb 2025 13:32:50 GMT" },
+          { "name": "server", "value": "Google Frontend" },
+          { "name": "content-length", "value": "71" }
+        ]
+      },
+      "body": {
+        "text": "{\"statusId\":\"b0e853ab-90f6-4aac-bf4e-7038be326a0a\"}",
+        "charset": null,
+        "decoded": true
+      }
+    }
+  },
+  {
+    "status": "COMPLETE",
+    "method": "POST",
+    "protocolVersion": "HTTP/2.0",
+    "scheme": "https",
+    "host": "api.connect2myhome.eu",
+    "actualPort": 443,
+    "path": "/v1/device/data/set",
+    "query": null,
+    "tunnel": false,
+    "keptAlive": true,
+    "clientKeptAlive": true,
+    "remoteAddress": "api.connect2myhome.eu/108.177.15.121",
+    "clientAddress": "/192.168.1.55",
+    "clientPort": 55858,
+    "clientLocalPort": 8888,
+    "remoteLocalPort": 53541,
+    "times": {
+      "start": "2025-02-01T14:32:51.956+01:00",
+      "requestBegin": "2025-02-01T14:32:51.957+01:00",
+      "requestComplete": "2025-02-01T14:32:51.957+01:00",
+      "responseBegin": "2025-02-01T14:32:52.245+01:00",
+      "end": "2025-02-01T14:32:52.245+01:00"
+    },
+    "durations": {
+      "total": 288,
+      "dns": null,
+      "connect": null,
+      "ssl": null,
+      "request": 0,
+      "response": 0,
+      "latency": 288
+    },
+    "speeds": { "overall": 1489, "request": 0, "response": 0 },
+    "totalSize": 429,
+    "ssl": { "protocol": "TLSv1.3" },
+    "request": {
+      "sizes": { "headers": 10, "body": 292 },
+      "mimeType": "application/x-www-form-urlencoded",
+      "charset": "UTF-8",
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          { "name": ":method", "value": "POST" },
+          { "name": ":scheme", "value": "https" },
+          { "name": ":path", "value": "/v1/device/data/set" },
+          { "name": ":authority", "value": "api.connect2myhome.eu" },
+          { "name": "accept", "value": "*/*" },
+          {
+            "name": "content-type",
+            "value": "application/x-www-form-urlencoded;charset=UTF-8"
+          },
+          { "name": "accept-encoding", "value": "gzip, deflate, br" },
+          {
+            "name": "user-agent",
+            "value": "meltem/113 CFNetwork/1568.300.101 Darwin/24.2.0"
+          },
+          { "name": "content-length", "value": "292" },
+          { "name": "accept-language", "value": "en-GB,en;q=0.9" }
+        ]
+      },
+      "body": {
+        "text": "apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&deviceId=ee1c263ee65cc605cfa38b74c2a79cee4267259814a277b4e3213f70d2c1c180&register=41120&values=3%2C230%2C0%2C0%2C0%2C0%2C0%2C0%2C0%2C0%2C0%2C0%2C0",
+        "charset": "UTF-8"
+      }
+    },
+    "response": {
+      "status": 200,
+      "sizes": { "headers": 56, "body": 71 },
+      "mimeType": "application/json",
+      "charset": null,
+      "contentEncoding": "gzip",
+      "header": {
+        "headers": [
+          { "name": ":status", "value": "200" },
+          { "name": "content-type", "value": "application/json" },
+          { "name": "vary", "value": "Accept-Encoding, User-Agent" },
+          { "name": "content-encoding", "value": "gzip" },
+          {
+            "name": "x-cloud-trace-context",
+            "value": "ada156f7286ed3dc1866a905ac6b5e05"
+          },
+          { "name": "date", "value": "Sat, 01 Feb 2025 13:32:52 GMT" },
+          { "name": "server", "value": "Google Frontend" },
+          { "name": "content-length", "value": "71" }
+        ]
+      },
+      "body": {
+        "text": "{\"statusId\":\"0665306b-953e-409f-bb5e-d95b96bcd871\"}",
+        "charset": null,
+        "decoded": true
+      }
+    }
+  }
+]

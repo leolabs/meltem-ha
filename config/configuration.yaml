@@ -1,0 +1,19 @@
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+# Enables configuration UI
+config:
+
+# Enable debugging for our custom component
+logger:
+  default: info
+  logs:
+    custom_components.meltem: debug
+# Uncomment and configure this to test the integration
+# meltem:
+#   username: your_username
+#   password: your_password
+#   session_id: your_session_id

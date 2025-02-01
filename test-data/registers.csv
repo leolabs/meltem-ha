@@ -1,0 +1,17 @@
+Register number,Read/ write,Function/name,Unit
+41000,R,Extract air temperature,°C
+41002,R,Outdoor air temperature,°C
+41004,R,Exhaust air temperature,°C
+41006,R,Humidity; extract air,%
+41007,R,CO2; extract air,ppm
+41009,R,Supply air temperature,C
+41011,R,Humidity; supply air,%
+41013,R,VOC; supply air,ppm
+41016,R,Error message: 0 = device OK; 1 = error,
+41017,R,Air filter change indicator: 0 = air filter change time not elapsed; 1 = air filter change time elapsed,
+41018,R,Frost protection function: 0 = not active; 1 = active,
+41020,R,Ventilation level for extract air,m³/h
+41021,R,Ventilation level for supply air,m³/h
+41027,R,Time until air filter change,Days
+41030,R,Ventilation unit operating hours,h
+41032,R,Fan motors operating hours,h

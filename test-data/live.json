@@ -1,0 +1,618 @@
+[
+  {
+    "status": "COMPLETE",
+    "method": "GET",
+    "protocolVersion": "HTTP/2.0",
+    "scheme": "https",
+    "host": "api.connect2myhome.eu",
+    "actualPort": 443,
+    "path": "/v1/device/data/live",
+    "query": "apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&deviceId=ee1c263ee65cc605cfa38b74c2a79cee4267259814a277b4e3213f70d2c1c180&registers=41000%2C41002%2C41004%2C41006%2C41007%2C41009%2C41011%2C41013%2C41020%2C41021%2C41027%2C41030%2C41113%2C41100%2C41101%2C41102%2C41103%2C41104%2C41106%2C40103%2C41016%2C41017",
+    "tunnel": false,
+    "keptAlive": true,
+    "clientKeptAlive": true,
+    "remoteAddress": "api.connect2myhome.eu/108.177.15.121",
+    "clientAddress": "/192.168.1.55",
+    "clientPort": 55858,
+    "clientLocalPort": 8888,
+    "remoteLocalPort": 53541,
+    "times": {
+      "start": "2025-02-01T14:32:53.472+01:00",
+      "requestBegin": "2025-02-01T14:32:53.473+01:00",
+      "requestComplete": "2025-02-01T14:32:53.473+01:00",
+      "responseBegin": "2025-02-01T14:32:53.986+01:00",
+      "end": "2025-02-01T14:32:53.986+01:00"
+    },
+    "durations": {
+      "total": 513,
+      "dns": null,
+      "connect": null,
+      "ssl": null,
+      "request": 0,
+      "response": 0,
+      "latency": 513
+    },
+    "speeds": { "overall": 688, "request": 0, "response": 0 },
+    "totalSize": 353,
+    "ssl": { "protocol": "TLSv1.3" },
+    "request": {
+      "sizes": { "headers": 8, "body": 0 },
+      "mimeType": null,
+      "charset": null,
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          { "name": ":method", "value": "GET" },
+          { "name": ":scheme", "value": "https" },
+          {
+            "name": ":path",
+            "value": "/v1/device/data/live?apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&deviceId=ee1c263ee65cc605cfa38b74c2a79cee4267259814a277b4e3213f70d2c1c180&registers=41000%2C41002%2C41004%2C41006%2C41007%2C41009%2C41011%2C41013%2C41020%2C41021%2C41027%2C41030%2C41113%2C41100%2C41101%2C41102%2C41103%2C41104%2C41106%2C40103%2C41016%2C41017"
+          },
+          { "name": ":authority", "value": "api.connect2myhome.eu" },
+          {
+            "name": "user-agent",
+            "value": "meltem/113 CFNetwork/1568.300.101 Darwin/24.2.0"
+          },
+          { "name": "accept", "value": "*/*" },
+          { "name": "accept-language", "value": "en-GB,en;q=0.9" },
+          { "name": "accept-encoding", "value": "gzip, deflate, br" }
+        ]
+      }
+    },
+    "response": {
+      "status": 200,
+      "sizes": { "headers": 60, "body": 285 },
+      "mimeType": "application/json",
+      "charset": null,
+      "contentEncoding": "gzip",
+      "header": {
+        "headers": [
+          { "name": ":status", "value": "200" },
+          { "name": "content-type", "value": "application/json" },
+          { "name": "vary", "value": "Accept-Encoding, User-Agent" },
+          { "name": "content-encoding", "value": "gzip" },
+          {
+            "name": "x-cloud-trace-context",
+            "value": "2d2a8878e5c8d669243bf622f9c5d2fb"
+          },
+          { "name": "date", "value": "Sat, 01 Feb 2025 13:32:53 GMT" },
+          { "name": "server", "value": "Google Frontend" },
+          { "name": "content-length", "value": "285" }
+        ]
+      },
+      "body": {
+        "text": "{\"data\":[{\"address\":41000,\"value\":\"NaN\",\"lastUpdate\":1738412465661},{\"address\":41002,\"value\":\"NaN\",\"lastUpdate\":1738412465724},{\"address\":41004,\"value\":7.71,\"lastUpdate\":1738416665717},{\"address\":41006,\"value\":239,\"lastUpdate\":1738412465843},{\"address\":41007,\"value\":32767,\"lastUpdate\":1738412465903},{\"address\":41009,\"value\":\"NaN\",\"lastUpdate\":1738412465961},{\"address\":41011,\"value\":239,\"lastUpdate\":1738412466039},{\"address\":41013,\"status\":1001},{\"address\":41020,\"value\":10,\"lastUpdate\":1738414475788},{\"address\":41021,\"value\":10,\"lastUpdate\":1738414475852},{\"address\":41027,\"value\":322,\"lastUpdate\":1738412254481},{\"address\":41030,\"value\":17636,\"lastUpdate\":1738412245094},{\"address\":41113,\"value\":25001,\"lastUpdate\":1738416772692},{\"address\":41100,\"value\":3,\"lastUpdate\":1738412541355},{\"address\":41101,\"value\":230,\"lastUpdate\":1738416772539},{\"address\":41102,\"value\":0,\"lastUpdate\":1738412266001},{\"address\":41103,\"value\":0,\"lastUpdate\":1738412541470},{\"address\":41104,\"value\":0,\"lastUpdate\":1738412541501},{\"address\":41106,\"value\":0,\"lastUpdate\":1738412266152},{\"address\":40103,\"status\":1001},{\"address\":41016,\"value\":0,\"lastUpdate\":1738412466126},{\"address\":41017,\"value\":0,\"lastUpdate\":1738412466182}]}",
+        "charset": null,
+        "decoded": true
+      }
+    }
+  },
+  {
+    "status": "COMPLETE",
+    "method": "GET",
+    "protocolVersion": "HTTP/2.0",
+    "scheme": "https",
+    "host": "api.connect2myhome.eu",
+    "actualPort": 443,
+    "path": "/v1/device/data/live",
+    "query": "apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&deviceId=ee1c263ee65cc605cfa38b74c2a79cee4267259814a277b4e3213f70d2c1c180&registers=41000%2C41002%2C41004%2C41006%2C41007%2C41009%2C41011%2C41013%2C41020%2C41021%2C41027%2C41030%2C41113%2C41100%2C41101%2C41102%2C41103%2C41104%2C41106%2C40103%2C41016%2C41017",
+    "tunnel": false,
+    "keptAlive": true,
+    "clientKeptAlive": true,
+    "remoteAddress": "api.connect2myhome.eu/108.177.15.121",
+    "clientAddress": "/192.168.1.55",
+    "clientPort": 55858,
+    "clientLocalPort": 8888,
+    "remoteLocalPort": 53541,
+    "times": {
+      "start": "2025-02-01T14:32:56.544+01:00",
+      "requestBegin": "2025-02-01T14:32:56.545+01:00",
+      "requestComplete": "2025-02-01T14:32:56.547+01:00",
+      "responseBegin": "2025-02-01T14:32:56.881+01:00",
+      "end": "2025-02-01T14:32:56.881+01:00"
+    },
+    "durations": {
+      "total": 336,
+      "dns": null,
+      "connect": null,
+      "ssl": null,
+      "request": 2,
+      "response": 0,
+      "latency": 334
+    },
+    "speeds": { "overall": 1050, "request": 4000, "response": 0 },
+    "totalSize": 353,
+    "ssl": { "protocol": "TLSv1.3" },
+    "request": {
+      "sizes": { "headers": 8, "body": 0 },
+      "mimeType": null,
+      "charset": null,
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          { "name": ":method", "value": "GET" },
+          { "name": ":scheme", "value": "https" },
+          {
+            "name": ":path",
+            "value": "/v1/device/data/live?apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&deviceId=ee1c263ee65cc605cfa38b74c2a79cee4267259814a277b4e3213f70d2c1c180&registers=41000%2C41002%2C41004%2C41006%2C41007%2C41009%2C41011%2C41013%2C41020%2C41021%2C41027%2C41030%2C41113%2C41100%2C41101%2C41102%2C41103%2C41104%2C41106%2C40103%2C41016%2C41017"
+          },
+          { "name": ":authority", "value": "api.connect2myhome.eu" },
+          {
+            "name": "user-agent",
+            "value": "meltem/113 CFNetwork/1568.300.101 Darwin/24.2.0"
+          },
+          { "name": "accept", "value": "*/*" },
+          { "name": "accept-language", "value": "en-GB,en;q=0.9" },
+          { "name": "accept-encoding", "value": "gzip, deflate, br" }
+        ]
+      }
+    },
+    "response": {
+      "status": 200,
+      "sizes": { "headers": 60, "body": 285 },
+      "mimeType": "application/json",
+      "charset": null,
+      "contentEncoding": "gzip",
+      "header": {
+        "headers": [
+          { "name": ":status", "value": "200" },
+          { "name": "content-type", "value": "application/json" },
+          { "name": "vary", "value": "Accept-Encoding, User-Agent" },
+          { "name": "content-encoding", "value": "gzip" },
+          {
+            "name": "x-cloud-trace-context",
+            "value": "a2ce5cfa779863f81abf5ec0f4636eca;o=1"
+          },
+          { "name": "date", "value": "Sat, 01 Feb 2025 13:32:56 GMT" },
+          { "name": "server", "value": "Google Frontend" },
+          { "name": "content-length", "value": "285" }
+        ]
+      },
+      "body": {
+        "text": "{\"data\":[{\"address\":41000,\"value\":\"NaN\",\"lastUpdate\":1738412465661},{\"address\":41002,\"value\":\"NaN\",\"lastUpdate\":1738412465724},{\"address\":41004,\"value\":7.8300004,\"lastUpdate\":1738416775819},{\"address\":41006,\"value\":239,\"lastUpdate\":1738412465843},{\"address\":41007,\"value\":32767,\"lastUpdate\":1738412465903},{\"address\":41009,\"value\":\"NaN\",\"lastUpdate\":1738412465961},{\"address\":41011,\"value\":239,\"lastUpdate\":1738412466039},{\"address\":41013,\"status\":1001},{\"address\":41020,\"value\":60,\"lastUpdate\":1738416775888},{\"address\":41021,\"value\":60,\"lastUpdate\":1738416775945},{\"address\":41027,\"value\":322,\"lastUpdate\":1738412254481},{\"address\":41030,\"value\":17636,\"lastUpdate\":1738412245094},{\"address\":41113,\"value\":25001,\"lastUpdate\":1738416772692},{\"address\":41100,\"value\":3,\"lastUpdate\":1738412541355},{\"address\":41101,\"value\":230,\"lastUpdate\":1738416772539},{\"address\":41102,\"value\":0,\"lastUpdate\":1738412266001},{\"address\":41103,\"value\":0,\"lastUpdate\":1738412541470},{\"address\":41104,\"value\":0,\"lastUpdate\":1738412541501},{\"address\":41106,\"value\":0,\"lastUpdate\":1738412266152},{\"address\":40103,\"status\":1001},{\"address\":41016,\"value\":0,\"lastUpdate\":1738412466126},{\"address\":41017,\"value\":0,\"lastUpdate\":1738412466182}]}",
+        "charset": null,
+        "decoded": true
+      }
+    }
+  },
+  {
+    "status": "COMPLETE",
+    "method": "GET",
+    "protocolVersion": "HTTP/2.0",
+    "scheme": "https",
+    "host": "api.connect2myhome.eu",
+    "actualPort": 443,
+    "path": "/v1/device/data/live",
+    "query": "apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&deviceId=ee1c263ee65cc605cfa38b74c2a79cee4267259814a277b4e3213f70d2c1c180&registers=41000%2C41002%2C41004%2C41006%2C41007%2C41009%2C41011%2C41013%2C41020%2C41021%2C41027%2C41030%2C41113%2C41100%2C41101%2C41102%2C41103%2C41104%2C41106%2C40103%2C41016%2C41017",
+    "tunnel": false,
+    "keptAlive": false,
+    "clientKeptAlive": false,
+    "remoteAddress": "api.connect2myhome.eu/108.177.15.121",
+    "clientAddress": "/192.168.1.55",
+    "clientPort": 55872,
+    "clientLocalPort": 8888,
+    "remoteLocalPort": 53640,
+    "times": {
+      "start": "2025-02-01T14:32:59.537+01:00",
+      "requestBegin": "2025-02-01T14:32:59.538+01:00",
+      "requestComplete": "2025-02-01T14:32:59.538+01:00",
+      "responseBegin": "2025-02-01T14:32:59.924+01:00",
+      "end": "2025-02-01T14:32:59.924+01:00"
+    },
+    "durations": {
+      "total": 443,
+      "dns": 2,
+      "connect": 23,
+      "ssl": 32,
+      "request": 0,
+      "response": 0,
+      "latency": 386
+    },
+    "speeds": { "overall": 4426, "request": 0, "response": 0 },
+    "totalSize": 1961,
+    "ssl": { "protocol": "TLSv1.3" },
+    "request": {
+      "sizes": { "handshake": 888, "headers": 403, "body": 0 },
+      "mimeType": null,
+      "charset": null,
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          { "name": ":method", "value": "GET" },
+          { "name": ":scheme", "value": "https" },
+          {
+            "name": ":path",
+            "value": "/v1/device/data/live?apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&deviceId=ee1c263ee65cc605cfa38b74c2a79cee4267259814a277b4e3213f70d2c1c180&registers=41000%2C41002%2C41004%2C41006%2C41007%2C41009%2C41011%2C41013%2C41020%2C41021%2C41027%2C41030%2C41113%2C41100%2C41101%2C41102%2C41103%2C41104%2C41106%2C40103%2C41016%2C41017"
+          },
+          { "name": ":authority", "value": "api.connect2myhome.eu" },
+          {
+            "name": "user-agent",
+            "value": "meltem/113 CFNetwork/1568.300.101 Darwin/24.2.0"
+          },
+          { "name": "accept", "value": "*/*" },
+          { "name": "accept-language", "value": "en-GB,en;q=0.9" },
+          { "name": "accept-encoding", "value": "gzip, deflate, br" }
+        ]
+      }
+    },
+    "response": {
+      "status": 200,
+      "sizes": { "handshake": 260, "headers": 125, "body": 285 },
+      "mimeType": "application/json",
+      "charset": null,
+      "contentEncoding": "gzip",
+      "header": {
+        "headers": [
+          { "name": ":status", "value": "200" },
+          { "name": "content-type", "value": "application/json" },
+          { "name": "vary", "value": "Accept-Encoding, User-Agent" },
+          { "name": "content-encoding", "value": "gzip" },
+          {
+            "name": "x-cloud-trace-context",
+            "value": "c3a10e44dbf3880cdf625e58a9f39482"
+          },
+          { "name": "date", "value": "Sat, 01 Feb 2025 13:32:59 GMT" },
+          { "name": "server", "value": "Google Frontend" },
+          { "name": "content-length", "value": "285" }
+        ]
+      },
+      "body": {
+        "text": "{\"data\":[{\"address\":41000,\"value\":\"NaN\",\"lastUpdate\":1738412465661},{\"address\":41002,\"value\":\"NaN\",\"lastUpdate\":1738412465724},{\"address\":41004,\"value\":7.8300004,\"lastUpdate\":1738416775819},{\"address\":41006,\"value\":239,\"lastUpdate\":1738412465843},{\"address\":41007,\"value\":32767,\"lastUpdate\":1738412465903},{\"address\":41009,\"value\":\"NaN\",\"lastUpdate\":1738412465961},{\"address\":41011,\"value\":239,\"lastUpdate\":1738412466039},{\"address\":41013,\"status\":1001},{\"address\":41020,\"value\":60,\"lastUpdate\":1738416775888},{\"address\":41021,\"value\":60,\"lastUpdate\":1738416775945},{\"address\":41027,\"value\":322,\"lastUpdate\":1738412254481},{\"address\":41030,\"value\":17636,\"lastUpdate\":1738412245094},{\"address\":41113,\"value\":25001,\"lastUpdate\":1738416772692},{\"address\":41100,\"value\":3,\"lastUpdate\":1738412541355},{\"address\":41101,\"value\":230,\"lastUpdate\":1738416772539},{\"address\":41102,\"value\":0,\"lastUpdate\":1738412266001},{\"address\":41103,\"value\":0,\"lastUpdate\":1738412541470},{\"address\":41104,\"value\":0,\"lastUpdate\":1738412541501},{\"address\":41106,\"value\":0,\"lastUpdate\":1738412266152},{\"address\":40103,\"status\":1001},{\"address\":41016,\"value\":0,\"lastUpdate\":1738412466126},{\"address\":41017,\"value\":0,\"lastUpdate\":1738412466182}]}",
+        "charset": null,
+        "decoded": true
+      }
+    }
+  },
+  {
+    "status": "COMPLETE",
+    "method": "GET",
+    "protocolVersion": "HTTP/2.0",
+    "scheme": "https",
+    "host": "api.connect2myhome.eu",
+    "actualPort": 443,
+    "path": "/v1/device/data/live",
+    "query": "apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&deviceId=ee1c263ee65cc605cfa38b74c2a79cee4267259814a277b4e3213f70d2c1c180&registers=41000%2C41002%2C41004%2C41006%2C41007%2C41009%2C41011%2C41013%2C41020%2C41021%2C41027%2C41030%2C41113%2C41100%2C41101%2C41102%2C41103%2C41104%2C41106%2C40103%2C41016%2C41017",
+    "tunnel": false,
+    "keptAlive": true,
+    "clientKeptAlive": true,
+    "remoteAddress": "api.connect2myhome.eu/108.177.15.121",
+    "clientAddress": "/192.168.1.55",
+    "clientPort": 55872,
+    "clientLocalPort": 8888,
+    "remoteLocalPort": 53640,
+    "times": {
+      "start": "2025-02-01T14:33:15.560+01:00",
+      "requestBegin": "2025-02-01T14:33:15.561+01:00",
+      "requestComplete": "2025-02-01T14:33:15.561+01:00",
+      "responseBegin": "2025-02-01T14:33:15.905+01:00",
+      "end": "2025-02-01T14:33:15.905+01:00"
+    },
+    "durations": {
+      "total": 344,
+      "dns": null,
+      "connect": null,
+      "ssl": null,
+      "request": 0,
+      "response": 0,
+      "latency": 344
+    },
+    "speeds": { "overall": 1017, "request": 0, "response": 0 },
+    "totalSize": 350,
+    "ssl": { "protocol": "TLSv1.3" },
+    "request": {
+      "sizes": { "headers": 8, "body": 0 },
+      "mimeType": null,
+      "charset": null,
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          { "name": ":method", "value": "GET" },
+          { "name": ":scheme", "value": "https" },
+          {
+            "name": ":path",
+            "value": "/v1/device/data/live?apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&deviceId=ee1c263ee65cc605cfa38b74c2a79cee4267259814a277b4e3213f70d2c1c180&registers=41000%2C41002%2C41004%2C41006%2C41007%2C41009%2C41011%2C41013%2C41020%2C41021%2C41027%2C41030%2C41113%2C41100%2C41101%2C41102%2C41103%2C41104%2C41106%2C40103%2C41016%2C41017"
+          },
+          { "name": ":authority", "value": "api.connect2myhome.eu" },
+          {
+            "name": "user-agent",
+            "value": "meltem/113 CFNetwork/1568.300.101 Darwin/24.2.0"
+          },
+          { "name": "accept", "value": "*/*" },
+          { "name": "accept-language", "value": "en-GB,en;q=0.9" },
+          { "name": "accept-encoding", "value": "gzip, deflate, br" }
+        ]
+      }
+    },
+    "response": {
+      "status": 200,
+      "sizes": { "headers": 57, "body": 285 },
+      "mimeType": "application/json",
+      "charset": null,
+      "contentEncoding": "gzip",
+      "header": {
+        "headers": [
+          { "name": ":status", "value": "200" },
+          { "name": "content-type", "value": "application/json" },
+          { "name": "vary", "value": "Accept-Encoding, User-Agent" },
+          { "name": "content-encoding", "value": "gzip" },
+          {
+            "name": "x-cloud-trace-context",
+            "value": "ed7222a88e41548524073a639f24c9f8"
+          },
+          { "name": "date", "value": "Sat, 01 Feb 2025 13:33:15 GMT" },
+          { "name": "server", "value": "Google Frontend" },
+          { "name": "content-length", "value": "285" }
+        ]
+      },
+      "body": {
+        "text": "{\"data\":[{\"address\":41000,\"value\":\"NaN\",\"lastUpdate\":1738412465661},{\"address\":41002,\"value\":\"NaN\",\"lastUpdate\":1738412465724},{\"address\":41004,\"value\":7.8300004,\"lastUpdate\":1738416775819},{\"address\":41006,\"value\":239,\"lastUpdate\":1738412465843},{\"address\":41007,\"value\":32767,\"lastUpdate\":1738412465903},{\"address\":41009,\"value\":\"NaN\",\"lastUpdate\":1738412465961},{\"address\":41011,\"value\":239,\"lastUpdate\":1738412466039},{\"address\":41013,\"status\":1001},{\"address\":41020,\"value\":60,\"lastUpdate\":1738416775888},{\"address\":41021,\"value\":60,\"lastUpdate\":1738416775945},{\"address\":41027,\"value\":322,\"lastUpdate\":1738412254481},{\"address\":41030,\"value\":17636,\"lastUpdate\":1738412245094},{\"address\":41113,\"value\":25001,\"lastUpdate\":1738416772692},{\"address\":41100,\"value\":3,\"lastUpdate\":1738412541355},{\"address\":41101,\"value\":230,\"lastUpdate\":1738416772539},{\"address\":41102,\"value\":0,\"lastUpdate\":1738412266001},{\"address\":41103,\"value\":0,\"lastUpdate\":1738412541470},{\"address\":41104,\"value\":0,\"lastUpdate\":1738412541501},{\"address\":41106,\"value\":0,\"lastUpdate\":1738412266152},{\"address\":40103,\"status\":1001},{\"address\":41016,\"value\":0,\"lastUpdate\":1738412466126},{\"address\":41017,\"value\":0,\"lastUpdate\":1738412466182}]}",
+        "charset": null,
+        "decoded": true
+      }
+    }
+  },
+  {
+    "status": "COMPLETE",
+    "method": "GET",
+    "protocolVersion": "HTTP/2.0",
+    "scheme": "https",
+    "host": "api.connect2myhome.eu",
+    "actualPort": 443,
+    "path": "/v1/device/data/live",
+    "query": "apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&deviceId=ee1c263ee65cc605cfa38b74c2a79cee4267259814a277b4e3213f70d2c1c180&registers=41000%2C41002%2C41004%2C41006%2C41007%2C41009%2C41011%2C41013%2C41020%2C41021%2C41027%2C41030%2C41113%2C41100%2C41101%2C41102%2C41103%2C41104%2C41106%2C40103%2C41016%2C41017",
+    "tunnel": false,
+    "keptAlive": false,
+    "clientKeptAlive": false,
+    "remoteAddress": "api.connect2myhome.eu/108.177.15.121",
+    "clientAddress": "/192.168.1.55",
+    "clientPort": 55883,
+    "clientLocalPort": 8888,
+    "remoteLocalPort": 53729,
+    "times": {
+      "start": "2025-02-01T14:33:17.096+01:00",
+      "requestBegin": "2025-02-01T14:33:17.097+01:00",
+      "requestComplete": "2025-02-01T14:33:17.097+01:00",
+      "responseBegin": "2025-02-01T14:33:17.451+01:00",
+      "end": "2025-02-01T14:33:17.453+01:00"
+    },
+    "durations": {
+      "total": 407,
+      "dns": 1,
+      "connect": 20,
+      "ssl": 30,
+      "request": 0,
+      "response": 2,
+      "latency": 354
+    },
+    "speeds": { "overall": 4825, "request": 0, "response": 336500 },
+    "totalSize": 1964,
+    "ssl": { "protocol": "TLSv1.3" },
+    "request": {
+      "sizes": { "handshake": 888, "headers": 403, "body": 0 },
+      "mimeType": null,
+      "charset": null,
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          { "name": ":method", "value": "GET" },
+          { "name": ":scheme", "value": "https" },
+          {
+            "name": ":path",
+            "value": "/v1/device/data/live?apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&deviceId=ee1c263ee65cc605cfa38b74c2a79cee4267259814a277b4e3213f70d2c1c180&registers=41000%2C41002%2C41004%2C41006%2C41007%2C41009%2C41011%2C41013%2C41020%2C41021%2C41027%2C41030%2C41113%2C41100%2C41101%2C41102%2C41103%2C41104%2C41106%2C40103%2C41016%2C41017"
+          },
+          { "name": ":authority", "value": "api.connect2myhome.eu" },
+          {
+            "name": "user-agent",
+            "value": "meltem/113 CFNetwork/1568.300.101 Darwin/24.2.0"
+          },
+          { "name": "accept", "value": "*/*" },
+          { "name": "accept-language", "value": "en-GB,en;q=0.9" },
+          { "name": "accept-encoding", "value": "gzip, deflate, br" }
+        ]
+      }
+    },
+    "response": {
+      "status": 200,
+      "sizes": { "handshake": 260, "headers": 128, "body": 285 },
+      "mimeType": "application/json",
+      "charset": null,
+      "contentEncoding": "gzip",
+      "header": {
+        "headers": [
+          { "name": ":status", "value": "200" },
+          { "name": "content-type", "value": "application/json" },
+          { "name": "vary", "value": "Accept-Encoding, User-Agent" },
+          { "name": "content-encoding", "value": "gzip" },
+          {
+            "name": "x-cloud-trace-context",
+            "value": "d07d691f7f62d64fc74c21394810916e;o=1"
+          },
+          { "name": "date", "value": "Sat, 01 Feb 2025 13:33:17 GMT" },
+          { "name": "server", "value": "Google Frontend" },
+          { "name": "content-length", "value": "285" }
+        ]
+      },
+      "body": {
+        "text": "{\"data\":[{\"address\":41000,\"value\":\"NaN\",\"lastUpdate\":1738412465661},{\"address\":41002,\"value\":\"NaN\",\"lastUpdate\":1738412465724},{\"address\":41004,\"value\":7.8300004,\"lastUpdate\":1738416775819},{\"address\":41006,\"value\":239,\"lastUpdate\":1738412465843},{\"address\":41007,\"value\":32767,\"lastUpdate\":1738412465903},{\"address\":41009,\"value\":\"NaN\",\"lastUpdate\":1738412465961},{\"address\":41011,\"value\":239,\"lastUpdate\":1738412466039},{\"address\":41013,\"status\":1001},{\"address\":41020,\"value\":60,\"lastUpdate\":1738416775888},{\"address\":41021,\"value\":60,\"lastUpdate\":1738416775945},{\"address\":41027,\"value\":322,\"lastUpdate\":1738412254481},{\"address\":41030,\"value\":17636,\"lastUpdate\":1738412245094},{\"address\":41113,\"value\":25001,\"lastUpdate\":1738416772692},{\"address\":41100,\"value\":3,\"lastUpdate\":1738412541355},{\"address\":41101,\"value\":230,\"lastUpdate\":1738416772539},{\"address\":41102,\"value\":0,\"lastUpdate\":1738412266001},{\"address\":41103,\"value\":0,\"lastUpdate\":1738412541470},{\"address\":41104,\"value\":0,\"lastUpdate\":1738412541501},{\"address\":41106,\"value\":0,\"lastUpdate\":1738412266152},{\"address\":40103,\"status\":1001},{\"address\":41016,\"value\":0,\"lastUpdate\":1738412466126},{\"address\":41017,\"value\":0,\"lastUpdate\":1738412466182}]}",
+        "charset": null,
+        "decoded": true
+      }
+    }
+  },
+  {
+    "status": "COMPLETE",
+    "method": "GET",
+    "protocolVersion": "HTTP/2.0",
+    "scheme": "https",
+    "host": "api.connect2myhome.eu",
+    "actualPort": 443,
+    "path": "/v1/device/data/live",
+    "query": "apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&deviceId=ee1c263ee65cc605cfa38b74c2a79cee4267259814a277b4e3213f70d2c1c180&registers=41000%2C41002%2C41004%2C41006%2C41007%2C41009%2C41011%2C41013%2C41020%2C41021%2C41027%2C41030%2C41113%2C41100%2C41101%2C41102%2C41103%2C41104%2C41106%2C40103%2C41016%2C41017",
+    "tunnel": false,
+    "keptAlive": true,
+    "clientKeptAlive": true,
+    "remoteAddress": "api.connect2myhome.eu/108.177.15.121",
+    "clientAddress": "/192.168.1.55",
+    "clientPort": 55883,
+    "clientLocalPort": 8888,
+    "remoteLocalPort": 53729,
+    "times": {
+      "start": "2025-02-01T14:33:20.007+01:00",
+      "requestBegin": "2025-02-01T14:33:20.007+01:00",
+      "requestComplete": "2025-02-01T14:33:20.008+01:00",
+      "responseBegin": "2025-02-01T14:33:20.405+01:00",
+      "end": "2025-02-01T14:33:20.405+01:00"
+    },
+    "durations": {
+      "total": 398,
+      "dns": null,
+      "connect": null,
+      "ssl": null,
+      "request": 1,
+      "response": 0,
+      "latency": 397
+    },
+    "speeds": { "overall": 879, "request": 8000, "response": 0 },
+    "totalSize": 350,
+    "ssl": { "protocol": "TLSv1.3" },
+    "request": {
+      "sizes": { "headers": 8, "body": 0 },
+      "mimeType": null,
+      "charset": null,
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          { "name": ":method", "value": "GET" },
+          { "name": ":scheme", "value": "https" },
+          {
+            "name": ":path",
+            "value": "/v1/device/data/live?apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&deviceId=ee1c263ee65cc605cfa38b74c2a79cee4267259814a277b4e3213f70d2c1c180&registers=41000%2C41002%2C41004%2C41006%2C41007%2C41009%2C41011%2C41013%2C41020%2C41021%2C41027%2C41030%2C41113%2C41100%2C41101%2C41102%2C41103%2C41104%2C41106%2C40103%2C41016%2C41017"
+          },
+          { "name": ":authority", "value": "api.connect2myhome.eu" },
+          {
+            "name": "user-agent",
+            "value": "meltem/113 CFNetwork/1568.300.101 Darwin/24.2.0"
+          },
+          { "name": "accept", "value": "*/*" },
+          { "name": "accept-language", "value": "en-GB,en;q=0.9" },
+          { "name": "accept-encoding", "value": "gzip, deflate, br" }
+        ]
+      }
+    },
+    "response": {
+      "status": 200,
+      "sizes": { "headers": 57, "body": 285 },
+      "mimeType": "application/json",
+      "charset": null,
+      "contentEncoding": "gzip",
+      "header": {
+        "headers": [
+          { "name": ":status", "value": "200" },
+          { "name": "content-type", "value": "application/json" },
+          { "name": "vary", "value": "Accept-Encoding, User-Agent" },
+          { "name": "content-encoding", "value": "gzip" },
+          {
+            "name": "x-cloud-trace-context",
+            "value": "d44dae58284a610bf7b698b15341c09a"
+          },
+          { "name": "date", "value": "Sat, 01 Feb 2025 13:33:20 GMT" },
+          { "name": "server", "value": "Google Frontend" },
+          { "name": "content-length", "value": "285" }
+        ]
+      },
+      "body": {
+        "text": "{\"data\":[{\"address\":41000,\"value\":\"NaN\",\"lastUpdate\":1738412465661},{\"address\":41002,\"value\":\"NaN\",\"lastUpdate\":1738412465724},{\"address\":41004,\"value\":7.8300004,\"lastUpdate\":1738416775819},{\"address\":41006,\"value\":239,\"lastUpdate\":1738412465843},{\"address\":41007,\"value\":32767,\"lastUpdate\":1738412465903},{\"address\":41009,\"value\":\"NaN\",\"lastUpdate\":1738412465961},{\"address\":41011,\"value\":239,\"lastUpdate\":1738412466039},{\"address\":41013,\"status\":1001},{\"address\":41020,\"value\":60,\"lastUpdate\":1738416775888},{\"address\":41021,\"value\":60,\"lastUpdate\":1738416775945},{\"address\":41027,\"value\":322,\"lastUpdate\":1738412254481},{\"address\":41030,\"value\":17636,\"lastUpdate\":1738412245094},{\"address\":41113,\"value\":25001,\"lastUpdate\":1738416772692},{\"address\":41100,\"value\":3,\"lastUpdate\":1738412541355},{\"address\":41101,\"value\":230,\"lastUpdate\":1738416772539},{\"address\":41102,\"value\":0,\"lastUpdate\":1738412266001},{\"address\":41103,\"value\":0,\"lastUpdate\":1738412541470},{\"address\":41104,\"value\":0,\"lastUpdate\":1738412541501},{\"address\":41106,\"value\":0,\"lastUpdate\":1738412266152},{\"address\":40103,\"status\":1001},{\"address\":41016,\"value\":0,\"lastUpdate\":1738412466126},{\"address\":41017,\"value\":0,\"lastUpdate\":1738412466182}]}",
+        "charset": null,
+        "decoded": true
+      }
+    }
+  },
+  {
+    "status": "COMPLETE",
+    "method": "GET",
+    "protocolVersion": "HTTP/2.0",
+    "scheme": "https",
+    "host": "api.connect2myhome.eu",
+    "actualPort": 443,
+    "path": "/v1/device/data/live",
+    "query": "apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&deviceId=ee1c263ee65cc605cfa38b74c2a79cee4267259814a277b4e3213f70d2c1c180&registers=41000%2C41002%2C41004%2C41006%2C41007%2C41009%2C41011%2C41013%2C41020%2C41021%2C41027%2C41030%2C41113%2C41100%2C41101%2C41102%2C41103%2C41104%2C41106%2C40103%2C41016%2C41017",
+    "tunnel": false,
+    "keptAlive": true,
+    "clientKeptAlive": true,
+    "remoteAddress": "api.connect2myhome.eu/108.177.15.121",
+    "clientAddress": "/192.168.1.55",
+    "clientPort": 55883,
+    "clientLocalPort": 8888,
+    "remoteLocalPort": 53729,
+    "times": {
+      "start": "2025-02-01T14:33:21.428+01:00",
+      "requestBegin": "2025-02-01T14:33:21.428+01:00",
+      "requestComplete": "2025-02-01T14:33:21.429+01:00",
+      "responseBegin": "2025-02-01T14:33:21.839+01:00",
+      "end": "2025-02-01T14:33:21.840+01:00"
+    },
+    "durations": {
+      "total": 412,
+      "dns": null,
+      "connect": null,
+      "ssl": null,
+      "request": 1,
+      "response": 1,
+      "latency": 410
+    },
+    "speeds": { "overall": 847, "request": 8000, "response": 341000 },
+    "totalSize": 349,
+    "ssl": { "protocol": "TLSv1.3" },
+    "request": {
+      "sizes": { "headers": 8, "body": 0 },
+      "mimeType": null,
+      "charset": null,
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          { "name": ":method", "value": "GET" },
+          { "name": ":scheme", "value": "https" },
+          {
+            "name": ":path",
+            "value": "/v1/device/data/live?apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&deviceId=ee1c263ee65cc605cfa38b74c2a79cee4267259814a277b4e3213f70d2c1c180&registers=41000%2C41002%2C41004%2C41006%2C41007%2C41009%2C41011%2C41013%2C41020%2C41021%2C41027%2C41030%2C41113%2C41100%2C41101%2C41102%2C41103%2C41104%2C41106%2C40103%2C41016%2C41017"
+          },
+          { "name": ":authority", "value": "api.connect2myhome.eu" },
+          {
+            "name": "user-agent",
+            "value": "meltem/113 CFNetwork/1568.300.101 Darwin/24.2.0"
+          },
+          { "name": "accept", "value": "*/*" },
+          { "name": "accept-language", "value": "en-GB,en;q=0.9" },
+          { "name": "accept-encoding", "value": "gzip, deflate, br" }
+        ]
+      }
+    },
+    "response": {
+      "status": 200,
+      "sizes": { "headers": 56, "body": 285 },
+      "mimeType": "application/json",
+      "charset": null,
+      "contentEncoding": "gzip",
+      "header": {
+        "headers": [
+          { "name": ":status", "value": "200" },
+          { "name": "content-type", "value": "application/json" },
+          { "name": "vary", "value": "Accept-Encoding, User-Agent" },
+          { "name": "content-encoding", "value": "gzip" },
+          {
+            "name": "x-cloud-trace-context",
+            "value": "c5681a1a3aa79266bdd446c9a93f5a94"
+          },
+          { "name": "date", "value": "Sat, 01 Feb 2025 13:33:21 GMT" },
+          { "name": "server", "value": "Google Frontend" },
+          { "name": "content-length", "value": "285" }
+        ]
+      },
+      "body": {
+        "text": "{\"data\":[{\"address\":41000,\"value\":\"NaN\",\"lastUpdate\":1738412465661},{\"address\":41002,\"value\":\"NaN\",\"lastUpdate\":1738412465724},{\"address\":41004,\"value\":7.8300004,\"lastUpdate\":1738416775819},{\"address\":41006,\"value\":239,\"lastUpdate\":1738412465843},{\"address\":41007,\"value\":32767,\"lastUpdate\":1738412465903},{\"address\":41009,\"value\":\"NaN\",\"lastUpdate\":1738412465961},{\"address\":41011,\"value\":239,\"lastUpdate\":1738412466039},{\"address\":41013,\"status\":1001},{\"address\":41020,\"value\":60,\"lastUpdate\":1738416775888},{\"address\":41021,\"value\":60,\"lastUpdate\":1738416775945},{\"address\":41027,\"value\":322,\"lastUpdate\":1738412254481},{\"address\":41030,\"value\":17636,\"lastUpdate\":1738412245094},{\"address\":41113,\"value\":25001,\"lastUpdate\":1738416772692},{\"address\":41100,\"value\":3,\"lastUpdate\":1738412541355},{\"address\":41101,\"value\":230,\"lastUpdate\":1738416772539},{\"address\":41102,\"value\":0,\"lastUpdate\":1738412266001},{\"address\":41103,\"value\":0,\"lastUpdate\":1738412541470},{\"address\":41104,\"value\":0,\"lastUpdate\":1738412541501},{\"address\":41106,\"value\":0,\"lastUpdate\":1738412266152},{\"address\":40103,\"status\":1001},{\"address\":41016,\"value\":0,\"lastUpdate\":1738412466126},{\"address\":41017,\"value\":0,\"lastUpdate\":1738412466182}]}",
+        "charset": null,
+        "decoded": true
+      }
+    }
+  }
+]

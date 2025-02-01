@@ -1,0 +1,112 @@
+{
+  "data": [
+    {
+      "address": 41000,
+      "value": "NaN",
+      "lastUpdate": 1738412465661
+    },
+    {
+      "address": 41002,
+      "value": "NaN",
+      "lastUpdate": 1738412465724
+    },
+    {
+      "address": 41004,
+      "value": 9.26,
+      "lastUpdate": 1738417865746
+    },
+    {
+      "address": 41006,
+      "value": 239,
+      "lastUpdate": 1738412465843
+    },
+    {
+      "address": 41007,
+      "value": 32767,
+      "lastUpdate": 1738412465903
+    },
+    {
+      "address": 41009,
+      "value": "NaN",
+      "lastUpdate": 1738412465961
+    },
+    {
+      "address": 41011,
+      "value": 239,
+      "lastUpdate": 1738412466039
+    },
+    {
+      "address": 41013,
+      "status": 1001
+    },
+    {
+      "address": 41020,
+      "value": 10,
+      "lastUpdate": 1738417546050
+    },
+    {
+      "address": 41021,
+      "value": 10,
+      "lastUpdate": 1738417546109
+    },
+    {
+      "address": 41027,
+      "value": 322,
+      "lastUpdate": 1738412254481
+    },
+    {
+      "address": 41030,
+      "value": 17636,
+      "lastUpdate": 1738412245094
+    },
+    {
+      "address": 41113,
+      "value": 25001,
+      "lastUpdate": 1738417884342
+    },
+    {
+      "address": 41100,
+      "value": 3,
+      "lastUpdate": 1738412541355
+    },
+    {
+      "address": 41101,
+      "value": 230,
+      "lastUpdate": 1738417884186
+    },
+    {
+      "address": 41102,
+      "value": 0,
+      "lastUpdate": 1738412266001
+    },
+    {
+      "address": 41103,
+      "value": 0,
+      "lastUpdate": 1738412541470
+    },
+    {
+      "address": 41104,
+      "value": 0,
+      "lastUpdate": 1738412541501
+    },
+    {
+      "address": 41106,
+      "value": 0,
+      "lastUpdate": 1738412266152
+    },
+    {
+      "address": 40103,
+      "status": 1001
+    },
+    {
+      "address": 41016,
+      "value": 0,
+      "lastUpdate": 1738412466126
+    },
+    {
+      "address": 41017,
+      "value": 0,
+      "lastUpdate": 1738412466182
+    }
+  ]
+}

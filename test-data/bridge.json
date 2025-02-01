@@ -1,0 +1,178 @@
+[
+  {
+    "status": "COMPLETE",
+    "method": "GET",
+    "protocolVersion": "HTTP/2.0",
+    "scheme": "https",
+    "host": "api.connect2myhome.eu",
+    "actualPort": 443,
+    "path": "/v1/bridge/list",
+    "query": "apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D",
+    "tunnel": false,
+    "keptAlive": true,
+    "clientKeptAlive": true,
+    "remoteAddress": "api.connect2myhome.eu/64.233.166.121",
+    "clientAddress": "/192.168.1.55",
+    "clientPort": 53527,
+    "clientLocalPort": 8888,
+    "remoteLocalPort": 61717,
+    "times": {
+      "start": "2025-02-01T14:13:53.692+01:00",
+      "requestBegin": "2025-02-01T14:13:53.693+01:00",
+      "requestComplete": "2025-02-01T14:13:53.694+01:00",
+      "responseBegin": "2025-02-01T14:13:53.772+01:00",
+      "end": "2025-02-01T14:13:53.774+01:00"
+    },
+    "durations": {
+      "total": 81,
+      "dns": null,
+      "connect": null,
+      "ssl": null,
+      "request": 1,
+      "response": 2,
+      "latency": 78
+    },
+    "speeds": { "overall": 3641, "request": 138000, "response": 78500 },
+    "totalSize": 295,
+    "ssl": { "protocol": "TLSv1.3" },
+    "request": {
+      "sizes": { "headers": 138, "body": 0 },
+      "mimeType": null,
+      "charset": null,
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          { "name": ":method", "value": "GET" },
+          { "name": ":scheme", "value": "https" },
+          {
+            "name": ":path",
+            "value": "/v1/bridge/list?apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D"
+          },
+          { "name": ":authority", "value": "api.connect2myhome.eu" },
+          {
+            "name": "user-agent",
+            "value": "meltem/113 CFNetwork/1568.300.101 Darwin/24.2.0"
+          },
+          { "name": "accept", "value": "*/*" },
+          { "name": "accept-language", "value": "en-GB,en;q=0.9" },
+          { "name": "accept-encoding", "value": "gzip, deflate, br" }
+        ]
+      }
+    },
+    "response": {
+      "status": 200,
+      "sizes": { "headers": 62, "body": 95 },
+      "mimeType": "application/json",
+      "charset": null,
+      "contentEncoding": "gzip",
+      "header": {
+        "headers": [
+          { "name": ":status", "value": "200" },
+          { "name": "content-type", "value": "application/json" },
+          { "name": "vary", "value": "Accept-Encoding, User-Agent" },
+          { "name": "content-encoding", "value": "gzip" },
+          {
+            "name": "x-cloud-trace-context",
+            "value": "db6783a09a06a90487f170e7ff8d86d2;o=1"
+          },
+          { "name": "date", "value": "Sat, 01 Feb 2025 13:13:53 GMT" },
+          { "name": "server", "value": "Google Frontend" },
+          { "name": "content-length", "value": "95" }
+        ]
+      },
+      "body": {
+        "text": "{\"bridges\":[{\"bridgeId\":\"f1dc3090-2b95-4920-b8b3-6314c0795d49\",\"name\":\"Wohnung\"}]}",
+        "charset": null,
+        "decoded": true
+      }
+    }
+  },
+  {
+    "status": "COMPLETE",
+    "method": "GET",
+    "protocolVersion": "HTTP/2.0",
+    "scheme": "https",
+    "host": "api.connect2myhome.eu",
+    "actualPort": 443,
+    "path": "/v1/bridge/devices",
+    "query": "apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&bridgeId=f1dc3090-2b95-4920-b8b3-6314c0795d49",
+    "tunnel": false,
+    "keptAlive": false,
+    "clientKeptAlive": false,
+    "remoteAddress": "api.connect2myhome.eu/64.233.167.121",
+    "clientAddress": "/192.168.1.55",
+    "clientPort": 54197,
+    "clientLocalPort": 8888,
+    "remoteLocalPort": 63460,
+    "times": {
+      "start": "2025-02-01T14:13:53.908+01:00",
+      "requestBegin": "2025-02-01T14:13:53.908+01:00",
+      "requestComplete": "2025-02-01T14:13:53.908+01:00",
+      "responseBegin": "2025-02-01T14:13:54.207+01:00",
+      "end": "2025-02-01T14:13:54.208+01:00"
+    },
+    "durations": {
+      "total": 367,
+      "dns": 15,
+      "connect": 20,
+      "ssl": 32,
+      "request": 0,
+      "response": 1,
+      "latency": 299
+    },
+    "speeds": { "overall": 4705, "request": 0, "response": 585000 },
+    "totalSize": 1727,
+    "ssl": { "protocol": "TLSv1.3" },
+    "request": {
+      "sizes": { "handshake": 888, "headers": 254, "body": 0 },
+      "mimeType": null,
+      "charset": null,
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          { "name": ":method", "value": "GET" },
+          { "name": ":scheme", "value": "https" },
+          {
+            "name": ":path",
+            "value": "/v1/bridge/devices?apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&bridgeId=f1dc3090-2b95-4920-b8b3-6314c0795d49"
+          },
+          { "name": ":authority", "value": "api.connect2myhome.eu" },
+          {
+            "name": "user-agent",
+            "value": "meltem/113 CFNetwork/1568.300.101 Darwin/24.2.0"
+          },
+          { "name": "accept", "value": "*/*" },
+          { "name": "accept-language", "value": "en-GB,en;q=0.9" },
+          { "name": "accept-encoding", "value": "gzip, deflate, br" }
+        ]
+      }
+    },
+    "response": {
+      "status": 200,
+      "sizes": { "handshake": 260, "headers": 124, "body": 201 },
+      "mimeType": "application/json",
+      "charset": null,
+      "contentEncoding": "gzip",
+      "header": {
+        "headers": [
+          { "name": ":status", "value": "200" },
+          { "name": "content-type", "value": "application/json" },
+          { "name": "vary", "value": "Accept-Encoding, User-Agent" },
+          { "name": "content-encoding", "value": "gzip" },
+          {
+            "name": "x-cloud-trace-context",
+            "value": "080308778f766d1613c9cd39e5bb2413"
+          },
+          { "name": "date", "value": "Sat, 01 Feb 2025 13:13:54 GMT" },
+          { "name": "server", "value": "Google Frontend" },
+          { "name": "content-length", "value": "201" }
+        ]
+      },
+      "body": {
+        "text": "{\"devices\":[{\"deviceId\":\"3f9e21ef26d7c39f0e4e1f8f7442fadcbf4aa92cbfa4c3b43ed5d35e0e971a6b\",\"productId\":\"0001c853\",\"zoneId\":\"default\",\"name\":\"Living Room\"},{\"deviceId\":\"ee1c263ee65cc605cfa38b74c2a79cee4267259814a277b4e3213f70d2c1c180\",\"productId\":\"0001c853\",\"zoneId\":\"default\",\"name\":\"Bedroom\"}]}",
+        "charset": null,
+        "decoded": true
+      }
+    }
+  }
+]
