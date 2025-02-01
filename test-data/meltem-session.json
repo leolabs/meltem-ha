@@ -61,7 +61,7 @@
         ]
       },
       "body": {
-        "text": "apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&username=leolabs&password=9708016411Leo",
+        "text": "apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&username=_username_&password=_password_",
         "charset": "UTF-8"
       }
     },
@@ -101,7 +101,7 @@
     "host": "api.connect2myhome.eu",
     "actualPort": 443,
     "path": "/v1/user/details",
-    "query": "apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&username=leolabs",
+    "query": "apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&username=_username_",
     "tunnel": false,
     "keptAlive": true,
     "clientKeptAlive": true,
@@ -140,7 +140,7 @@
           { "name": ":scheme", "value": "https" },
           {
             "name": ":path",
-            "value": "/v1/user/details?apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&username=leolabs"
+            "value": "/v1/user/details?apiKey=Xi18ypOBNZKnR30ENI4BSFeZ55E2wlhmT9czcKUV0cIjawCZJXMcu0ROd0GuoTSW&sessionId=JTDwyhM%2FIk67f8ZTiFKJOWkPArSEFAX8LMERA2moQuG6lxUk7vlzFw%3D%3D&username=_username_"
           },
           { "name": ":authority", "value": "api.connect2myhome.eu" },
           {
@@ -175,7 +175,7 @@
         ]
       },
       "body": {
-        "text": "{\"id\":\"a183456d2644c8cd0b9f702a607fe23e8883e1d317ef7a86d526ed35de6503c4\",\"oemId\":\"43785361-9492-452a-999e-73bbadff01cb\",\"username\":\"leolabs\",\"email\":\"leo@leolabs.org\",\"language\":\"de\"}",
+        "text": "{\"id\":\"a183456d2644c8cd0b9f702a607fe23e8883e1d317ef7a86d526ed35de6503c4\",\"oemId\":\"43785361-9492-452a-999e-73bbadff01cb\",\"username\":\"_username_\",\"email\":\"leo@_username_.org\",\"language\":\"de\"}",
         "charset": null,
         "decoded": true
       }
