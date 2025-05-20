@@ -54,7 +54,7 @@ class MeltemVentilationLevelSelect(CoordinatorEntity, SelectEntity):
         self._attr_name = "Ventilation Preset"
         self._attr_unique_id = f"{device_id}_ventilation_level"
         self._attr_options = [level.capitalize() for level in VENTILATION_LEVELS.keys()]
-        self._attr_icon = "mdi:fan-speed"
+        self._attr_icon = "mdi:fan"
         self._attr_has_entity_name = True
         self._attr_should_poll = False
 

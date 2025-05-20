@@ -284,47 +284,69 @@ class MeltemCoordinator(DataUpdateCoordinator):
         if level not in VENTILATION_LEVELS:
             raise ValueError(f"Invalid ventilation level: {level}")
 
-        try:
-            headers = {
-                **self._get_headers(),
-                "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
-            }
-            params = {
-                "apiKey": API_KEY,
-                "sessionId": self._session_id,
-                "deviceId": device_id,
-                "register": VENTILATION_REGISTER,
-                "values": ",".join(str(v) for v in VENTILATION_LEVELS[level]),
-            }
+        max_retries = 100
+        retry_count = 0
+        last_error = None
 
-            async with async_timeout.timeout(10):
-                async with self._session.post(
-                    f"{API_HOST}{API_SET_DATA_ENDPOINT}",
-                    headers=headers,
-                    data=params,
-                ) as response:
-                    if response.status == 401:
-                        await self._refresh_session()
-                        params["sessionId"] = self._session_id
-                        async with self._session.post(
-                            f"{API_HOST}{API_SET_DATA_ENDPOINT}",
-                            headers=headers,
-                            data=params,
-                        ) as retry_response:
-                            retry_response.raise_for_status()
-                    else:
-                        response.raise_for_status()
+        while retry_count < max_retries:
+            try:
+                headers = {
+                    **self._get_headers(),
+                    "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+                }
+                params = {
+                    "apiKey": API_KEY,
+                    "sessionId": self._session_id,
+                    "deviceId": device_id,
+                    "register": VENTILATION_REGISTER,
+                    "values": ",".join(str(v) for v in VENTILATION_LEVELS[level]),
+                }
 
-                    # If switching to manual mode, set an initial speed
-                    if level == "manual":
-                        _LOGGER.debug("Setting initial manual speed to minimum value")
-                        await self.async_set_manual_speed(device_id, VENTILATION_MANUAL_MIN)
-                    else:
-                        # Refresh live data for this device
-                        await self.async_refresh_device(device_id)
+                async with async_timeout.timeout(10):
+                    async with self._session.post(
+                        f"{API_HOST}{API_SET_DATA_ENDPOINT}",
+                        headers=headers,
+                        data=params,
+                    ) as response:
+                        if response.status == 401:
+                            await self._refresh_session()
+                            params["sessionId"] = self._session_id
+                            async with self._session.post(
+                                f"{API_HOST}{API_SET_DATA_ENDPOINT}",
+                                headers=headers,
+                                data=params,
+                            ) as retry_response:
+                                retry_response.raise_for_status()
+                        else:
+                            response.raise_for_status()
 
-        except (aiohttp.ClientError, asyncio.TimeoutError) as error:
-            raise UpdateFailed(f"Error setting ventilation level: {error}")
+                        # If we get here, the request was successful
+                        # If switching to manual mode, set an initial speed
+                        if level == "manual":
+                            _LOGGER.debug("Setting initial manual speed to minimum value")
+                            await self.async_set_manual_speed(device_id, VENTILATION_MANUAL_MIN)
+                        else:
+                            # Refresh live data for this device
+                            await self.async_refresh_device(device_id)
+
+                        # Success - exit the retry loop
+                        return
+
+            except (aiohttp.ClientError, asyncio.TimeoutError) as error:
+                last_error = error
+                retry_count += 1
+                if retry_count < max_retries:
+                    _LOGGER.warning(
+                        "Failed to set ventilation level (attempt %d/%d): %s. Retrying in 2 seconds...",
+                        retry_count,
+                        max_retries,
+                        error
+                    )
+                    await asyncio.sleep(2)
+                continue
+
+        # If we get here, all retries failed
+        raise UpdateFailed(f"Error setting ventilation level after {max_retries} attempts: {last_error}")
 
     async def async_set_manual_speed(self, device_id: str, percentage: int) -> None:
         """Set the manual ventilation speed for a device."""
